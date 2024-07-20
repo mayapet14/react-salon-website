@@ -1,26 +1,23 @@
-import salon from "../assets/home/salon.jpg";
+import React from "react";
+import PageTitle from "../components/PageTitle";
+import NavBar from "../components/NavBar";
+import HomeInfo from "../components/HomeInfo";
+import Testimonials from "../components/Testimonials";
+import Hours from "../components/Hours";
+import Footer from "../components/Footer";
 
-//component 3
-
-export default function HomeInfo() {
+export default function Home() {
   return (
     <>
-      <section class="homesection">
-        <h1 class="titlesalon">Maya's Salon</h1>
-        <p>
-          Welcome to Maya's Salon. Discover blonde, brunette, or a pop of color.
-          Our expert stylists are dedicated to helping you explore a world of
-          possibilities. Each visit begins with a personalized consultation to
-          enhance your natural beauty.
-        </p>
-        <div class="homeimgcontainer">
-          <img
-            class="homeimg"
-            src={salon}
-            alt="https://www.freepik.com/free-photo/woman-getting-her-hair-cut-beauty-salon_20083222.htm#fromView=search&page=1&position=4&uuid=3c19771f-d6b9-4f59-9815-c0e2b2720090"
-          />
-        </div>
-      </section>
+      <NavBar />
+      <HomeInfo />
+      <Hours />
+      <Testimonials />
+      <Footer />
+
+      <main>
+        <PageTitle title="Maya's Salon | Home" />
+      </main>
     </>
   );
 }

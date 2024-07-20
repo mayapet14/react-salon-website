@@ -16,7 +16,7 @@ export default function Form() {
         <label>Message</label>
         <input></input>
 
-        <button>Submit</button>
+        <button type="button" disabled>Submit</button>
       </form>
       <h2>Next available appointments</h2>
     </div>

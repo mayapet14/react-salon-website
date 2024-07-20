@@ -1,21 +1,26 @@
-import NavBar from "../components/NavBar";
-import PageTitle from "../components/PageTitle";
-import Footer from "../components/Footer";
+import salon from "../assets/home/salon.jpg";
 
-//component12
+//component 3
 
-export default function ErrorPage() {
+export default function HomeInfo() {
   return (
     <>
-      <NavBar />
-      <main>
-        <PageTitle title="Error" />
-        <div class="error">
-          <h2>Error!</h2>
-          <p>Page not found</p>
+      <section class="homesection">
+        <h1 class="titlesalon">Maya's Salon</h1>
+        <p>
+          Welcome to Maya's Salon. Discover blonde, brunette, or a pop of color.
+          Our expert stylists are dedicated to helping you explore a world of
+          possibilities. Each visit begins with a personalized consultation to
+          enhance your natural beauty.
+        </p>
+        <div class="homeimgcontainer">
+          <img
+            class="homeimg"
+            src={salon}
+            alt="https://www.freepik.com/free-photo/woman-getting-her-hair-cut-beauty-salon_20083222.htm#fromView=search&page=1&position=4&uuid=3c19771f-d6b9-4f59-9815-c0e2b2720090"
+          />
         </div>
-      </main>
-      <Footer />
+      </section>
     </>
   );
 }
